@@ -1,0 +1,76 @@
+    
+
+body{
+    background: rgb(146, 146, 146);
+    margin: 0;
+}
+.container{
+    margin: 0 auto;
+    display: grid;  
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px;
+}
+.container > img {
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    opacity: 30%;
+
+}
+header{
+    overflow: hidden;
+    grid-column: 2 / 6;
+    align-items: center;
+    background: linear-gradient(to right, #1fbab000, #1ca198);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+nav {
+    background: darkgray;
+    grid-row: 2;
+    grid-column: 1 / 2;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+main {
+    background: lightgrey;
+    grid-column: 2 / 6;
+    grid-row: 2;
+    padding: 20px;
+    border-top-right-radius: 10px;
+    line-height: 30px;
+    
+}
+
+footer {
+    background: rgb(87, 201, 201);
+    grid-column: 1 / 6;
+    grid-row: 3;
+    background: linear-gradient(to right, #1fbab000, #1ca198);
+    text-align: center;
+    height: 80px;
+}
+
+.title > h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    
+    transition: transform 250ms;
+    transform: translateX(50px);
+    &:hover{
+        transform: translateX(0px);
+    }
+}
+
+.subTitle {
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.text-center {
+    text-align: center;
+}
