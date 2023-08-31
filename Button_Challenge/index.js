@@ -1,4 +1,3 @@
-
 const button1 = document.getElementById("button1");
 const slider1 = document.getElementById("slider1");
 const nameDisplay = document.getElementById("buttonNameDisplay");
@@ -45,13 +44,13 @@ slider1.addEventListener('change', () => {
 checkboxDisableBtn.addEventListener('change', (e) => {
     if (e.target.checked) checkBoxDisableName = 'disabled';
     else checkBoxDisableName = '';
-    classNameVariableDisableBtn(checkBoxDisableName, checkBoxShadowDisableName);
+    setDisableBtnStyle(checkBoxDisableName, checkBoxShadowDisableName);
 });
 
 checkboxDisableShadow.addEventListener('change', (e) => {
     if (e.target.checked) checkBoxShadowDisableName = 'disableShadow';
     else checkBoxShadowDisableName = '';
-    classNameVariableDisableBtn(checkBoxDisableName, checkBoxShadowDisableName);
+    setDisableBtnStyle(checkBoxDisableName, checkBoxShadowDisableName);
 })
 
 checkboxIcons.addEventListener('change', (e) => {
