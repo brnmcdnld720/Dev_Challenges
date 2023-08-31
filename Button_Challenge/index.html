@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Component</title>
+</head>
+<body>
+   <div class="container">
+        <div class="column-left">
+            <h3 class="devchallenges">Devchallenges.io</h3>
+            <ul>
+                <li>Colors</li>
+                <li>Typography</li>
+                <li>Spaces</li>
+                <li>Buttons</li>
+                <li><b>Inputs</b></li>
+                <li>Grid</li>
+            </ul>
+        </div>
+
+        <div class="column-body">
+            <h2>Buttons</h2>
+            <p>Slide the slider to change the default of the button</p>
+            <div>
+                <Button id="button1" class="">Default</Button>
+                <input type="range" name="button" id="slider1" min="1" max="3" value="2">
+                <p id="buttonNameDisplay">Button type name: </p>
+            </div>
+           
+            <hr>
+            <div>
+                <h2>Disabling Features</h2>
+                <button class="" id="buttonDisable">Disable Me</Button>
+                <div class="containCheckBoxChoices">
+                    <input class="checkboxInLine" type="checkbox" name="disableShadow" id="disableButton">
+                    <p class="checkboxDescription">disable/enable button</p>
+                    <input class="checkboxInLineRow2" type="checkbox" name="disableShadow" id="disableShadow">
+                    <p class="checkboxDescriptionRow2">disable/enable shadow on button</p>
+                </div>
+            </div>            
+           
+            <hr>
+           
+            <div>
+                <input type="checkbox" name="checkForRight" id="iconSideCheck"> <p>check the box to move the icons on the buttons to the right and uncheck to move the icon to the left</p>
+            </div>
+            <div>
+                <button class="iconLeft" id="buttonIcons"><i class="material-icons">cloud</i>Button</Button>
+                <button class="iconLeft" id="buttonIcons"><i class="material-icons"> shopping_cart_checkout</i>Button</Button>
+                <button class="iconLeft" id="buttonIcons"><i class="material-icons">token</i>Button</Button>
+                <button class="iconLeft" id="buttonIcons"><i class="material-icons">computer</i>Button</Button>
+            </div>
+            <div>
+                <button class="iconLeft" id="buttonIcons"><i class="material-icons">library_add</i>Button</Button>
+                <button class="iconLeft" id="buttonIcons"><i class="material-icons">key</i>Button</Button>
+                <button class="iconLeft" id="buttonIcons"><i class="material-icons">favorite</i>Button</Button>
+                <button class="iconLeft" id="buttonIcons"><i class="material-icons">terminal</i>Button</Button>
+            </div>
+            
+        </div>
+    </div>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="index.js"></script>
+
+</html>
